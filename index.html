@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			p {
+				font-size: 0.6em !important;
+			}
+
+			.animate-el {
+				animation: zoomout 4s forwards linear;
+				animation-play-state: paused;
+			}
+			.animate-el.active {
+				animation-play-state: running;
+			}
+
+			.animate-el.anime-line {
+				animation: unset;
+			}
+			.animate-el.anime-line span {
+				position: relative;
+				padding-bottom: 10px;
+			}
+			.animate-el.anime-line span::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 5px;
+				background: #f4f4f4;
+				width: 0;
+				transition: all 4s;
+				transition-timing-function: cubic-bezier(0.65, 0.03, 0.25, 0.82);
+			}
+			.animate-el.anime-line.active span::after {
+				width: 100%;
+			}
+
+			.flex {
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.flex-auto {
+				flex: auto;
+			}
+			
+			@keyframes zoomout {
+				0% {transform: scale(0); opacity: 0;}
+				50% {transform: scale(1); opacity: 1;}
+				100% {transform: scale(3); opacity: 0;}
+			}
+
+			/* control progress */
+			.reveal .progress {
+				transition: color 1s;
+			}
+			/* youtube bg video */
+			.fullscreen-video {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+						<textarea data-template>
+							## 	StackNeverFlow - MSTU 4040
+							Shuai Yuan
+							<br>
+							<p>The Coding Community For Your Fragmentalized Time</p>
+							
+							<aside class="notes">
+								Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+							</aside>
+						</textarea>
+
+				</section>
+				<section data-markdown>
+						<textarea data-template>
+							## Problems - Background - 1
+							* Programming or Programming Thinking is increasingly important
+							* Programming has a relatively high learning curve and threshold for beginners
+							* For adult learners, their learning time is fragmentalized - Large City
+						</textarea>
+				</section>
+				<section data-markdown>
+						<textarea data-template>
+							## Problems - Background - 2
+							* Insufficient instructions in formal coding education
+							* Detached from real-world practical application
+						</textarea>
+				</section>
+				<section>Solution</section>
+				<section data-anima=true>
+					<p class="animate-el anime-line">
+						<span>A handy product covering the essential knowledge</span>
+					</p>
+				</section>
+				<section data-anima=true>
+					<p class="animate-el anime-line">
+						<span>A handy product bridging the real-world</span>
+					</p>
+				</section>
+				<section data-anima=true>
+					<p class="animate-el anime-line">
+						<span>A handy product that is firendly to beginners</span>
+					</p>
+				</section>
+				<section data-anima=true>
+					<p class="animate-el anime-line">
+						<span>A handy product that comes in handy and use the fragmentalized time</span>
+					</p>
+				</section>
+				<section data-anima=true>
+						<div class="animate-el">What do I mean by handy?</div>
+				</section>
+				<section data-anima=true>
+						<div class="animate-el">Light</div>
+				</section>
+				<section data-anima=true>
+						<div class="animate-el">Accessible</div>
+				</section>
+				<section data-anima=true>
+						<div class="animate-el">Satisfactory</div>
+				</section>
+				<section data-anima=true>
+						<div class="animate-el">Self-Disciplinary</div>
+				</section>
+				<section>
+					<div class="animate-el">How Do I Know It's Effective? - Effectiveness</div>
+				</section>
+				<section>Discover</section>
+				<section data-background-image="https://cdn2.i-scmp.com/sites/default/files/styles/980x551/public/images/methode/2018/01/22/f18961de-ff33-11e7-b181-443655c1d2b1_1280x720_143203.JPG?itok=gjWvTUc4">
+						Wechat Mini-Program
+				</section>
+				<section>
+					<img src="https://cdn.dribbble.com/users/325055/screenshots/3452971/___-1.png" alt="">
+				</section>
+				<section>#Timeline</section>
+				<section data-background-iframe="https://sy2729.github.io/atos-timeline/dist/#/timeline" data-background-interactive>
+				</section>
+				<section data-background-image="https://lh5.googleusercontent.com/I48vg1cJ1HEEnryVD6txC8O_x_1erkqSbQqlMDo0xy6mlkyazrJzujt2KhS1XNua2u4Jq5_lNkNW33TEae0wmT-t6uLceVOp1Gi3KlqMAUqZ8pUbT_lrA5Dyyh3P2h7CwuKDWTL9">Slide 2</section>
+				<!-- <section>
+						<iframe class='fullscreen-video' src="https://www.youtube.com/embed/a4rsg1fthbU?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section> -->
+				<section data-background-video="https://res.cloudinary.com/shuaiyuan/video/upload/v1543469363/stack-never-flow/bg-video.webm" data-background-video-loop data-background-video-muted>
+					<h2>Our Story</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// overview: true,
+				// showNotes: true,
+				// center: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({
+				autoSlide: 5000
+			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				let anime = event.currentSlide.getAttribute('data-anima')
+				let slide = document.querySelector(`section:nth-child(${event.indexh+1})`)
+				if(anime) {
+					var el = slide.querySelector('.animate-el');
+					el.classList.add('active')
+				}else {
+					// var el = slide.querySelector('.animate-el');
+					// 	el.classList.remove('active')
+				}
+
+				
+
+				// change the progress bar color
+				var total = Reveal.getTotalSlides()
+				let bar = document.querySelector('.reveal .progress');
+				if(event.indexh / total < 0.3) { 
+					bar.style.color	= '#59A0DF'
+				}else if(event.indexh / total > 0.3 && event.indexh / total < 0.5) {
+					bar.style.color	= '#DEB25F'
+				}else if(event.indexh / total > 0.5 && event.indexh / total < 0.8) {
+					bar.style.color	= '#CD7363'
+				}else {
+					bar.style.color	= '#93C260'
+				}
+
+
+				// event.currentSlide, event.indexh, event.indexv
+			});
+
+			
+
+		</script>
+	</body>
+</html>
