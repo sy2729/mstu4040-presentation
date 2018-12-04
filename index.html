@@ -13,16 +13,19 @@
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<style>
-			p {
-				font-size: 0.6em !important;
+			p, ul {
+				font-size: 0.65em !important;
+			}
+			ul > li {
+				padding: 10px 0 !important;
 			}
 
 			.animate-el {
-				animation: zoomout 4s forwards linear;
-				animation-play-state: paused;
+				/* animation-play-state: paused; */
 			}
 			.animate-el.active {
-				animation-play-state: running;
+				animation: zoomout 1s forwards linear;
+				/* animation-play-state: running; */
 			}
 
 			.animate-el.anime-line {
@@ -51,6 +54,14 @@
 				display: flex;
 				justify-content: space-around;
 			}
+			
+			.flex-img {
+				max-width: 200px !important;
+				align-self: flex-start !important;
+			}
+			.text-left {
+				text-align: left;
+			}
 
 			.flex-auto {
 				flex: auto;
@@ -58,31 +69,58 @@
 			
 			@keyframes zoomout {
 				0% {transform: scale(0); opacity: 0;}
-				50% {transform: scale(1); opacity: 1;}
-				100% {transform: scale(3); opacity: 0;}
+				100% {transform: scale(1); opacity: 1;}
+				/* 100% {transform: scale(3); opacity: 0;} */
 			}
 
 			/* control progress */
 			.reveal .progress {
 				transition: color 1s;
 			}
+			/* title anime */
+			.title-anime {
+				text-transform: uppercase;
+				font-weight: 700;
+				position: relative;
+				display: inline;
+			}
+
+			.title-anime::after {
+				content: '';
+				position: absolute;
+				right: -2px;
+				top: 0;
+				height: 100%;
+				width: 4px;
+				background: #f4f4f4;
+				animation: shin 1.5s infinite;
+			}
+
+			@keyframes shin {
+				0%{ opacity: 0; }
+				100%{ opacity: 1;}
+			}
+
 			/* youtube bg video */
-			.fullscreen-video {
+			/* .fullscreen-video {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
 				height: 100%;
-			}
+			} */
 
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown>
+				<section data-markdown data-background-video="https://res.cloudinary.com/shuaiyuan/video/upload/v1543795765/stack-never-flow/demo.mp4" data-background-video-loop data-background-video-muted>
 						<textarea data-template>
-							## 	StackNeverFlow - MSTU 4040
+							<h2 class="title-anime">
+								StackNeverFlow - MSTU 4040
+							</h2>
+							<br>
 							Shuai Yuan
 							<br>
 							<p>The Coding Community For Your Fragmentalized Time</p>
@@ -93,20 +131,22 @@
 						</textarea>
 
 				</section>
-				<section data-markdown>
+				<section>
+					<section  data-markdown>
 						<textarea data-template>
-							## Problems - Background - 1
+							## Problems
 							* Programming or Programming Thinking is increasingly important
 							* Programming has a relatively high learning curve and threshold for beginners
 							* For adult learners, their learning time is fragmentalized - Large City
 						</textarea>
-				</section>
-				<section data-markdown>
-						<textarea data-template>
-							## Problems - Background - 2
-							* Insufficient instructions in formal coding education
-							* Detached from real-world practical application
-						</textarea>
+					</section>
+					<section data-markdown>
+							<textarea data-template>
+								## Background
+								* Insufficient instructions in formal coding education
+								* Detached from real-world practical application
+							</textarea>
+					</section>
 				</section>
 				<section>Solution</section>
 				<section data-anima=true>
@@ -151,18 +191,33 @@
 				<section data-background-image="https://cdn2.i-scmp.com/sites/default/files/styles/980x551/public/images/methode/2018/01/22/f18961de-ff33-11e7-b181-443655c1d2b1_1280x720_143203.JPG?itok=gjWvTUc4">
 						Wechat Mini-Program
 				</section>
+				<section data-markdown data-background-video="https://res.cloudinary.com/shuaiyuan/video/upload/v1543881754/stack-never-flow/wechat_advert.mp4" data-background-video-loop data-background-video-muted>
+						<textarea data-template>
+								## Feature
+								<div class="flex">
+									<ul class="text-left">
+										<li class="fragment fade-up">Native support nested in Wechat</li>
+										<li class="fragment fade-up">Fast developing with user credential</li>
+										<li class="fragment fade-up">Powerful Wechat ecosystem for info transfer and sharing</li>
+										<li class="fragment fade-up">One App, All Phones - IOS & Android</li>
+									</ul>
+										<img class="flex-img" src="https://cdn.dribbble.com/users/325055/screenshots/3452971/___-1.png" alt="">
+								</div>
+							</textarea>
+				</section>
 				<section>
-					<img src="https://cdn.dribbble.com/users/325055/screenshots/3452971/___-1.png" alt="">
+						<iframe width="1080" height="720" src="https://www.youtube.com/embed/9F920cioZ4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</section>
 				<section>#Timeline</section>
 				<section data-background-iframe="https://sy2729.github.io/atos-timeline/dist/#/timeline" data-background-interactive>
 				</section>
-				<section data-background-image="https://lh5.googleusercontent.com/I48vg1cJ1HEEnryVD6txC8O_x_1erkqSbQqlMDo0xy6mlkyazrJzujt2KhS1XNua2u4Jq5_lNkNW33TEae0wmT-t6uLceVOp1Gi3KlqMAUqZ8pUbT_lrA5Dyyh3P2h7CwuKDWTL9">Slide 2</section>
-				<!-- <section>
-						<iframe class='fullscreen-video' src="https://www.youtube.com/embed/a4rsg1fthbU?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</section> -->
-				<section data-background-video="https://res.cloudinary.com/shuaiyuan/video/upload/v1543469363/stack-never-flow/bg-video.webm" data-background-video-loop data-background-video-muted>
-					<h2>Our Story</h2>
+				<section>#Accomplishment</section>
+				<section data-background-iframe="https://sy2729.github.io/mstu4040-presentation-material/" data-background-interactive>
+				</section>
+				<section data-background-video="https://res.cloudinary.com/shuaiyuan/video/upload/v1543795765/stack-never-flow/demo.mp4" data-background-video-loop data-background-video-muted>
+					Thanks
+					<p class="fragment fade-up">Need Some Funding</p>
+					<p class="fragment fade-up">and Engineers</p>
 				</section>
 			</div>
 		</div>
@@ -189,15 +244,19 @@
 				autoSlide: 5000
 			});
 
+
+			let lastSlide;
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 				let anime = event.currentSlide.getAttribute('data-anima')
-				let slide = document.querySelector(`section:nth-child(${event.indexh+1})`)
+				// console.log(anime)
 				if(anime) {
-					var el = slide.querySelector('.animate-el');
+					let newSlide = document.querySelector(`section:nth-child(${event.indexh+1})`)
+					var el = newSlide.querySelector('.animate-el');
 					el.classList.add('active')
+					clearLast(lastSlide)
+					lastSlide = newSlide;
 				}else {
-					// var el = slide.querySelector('.animate-el');
-					// 	el.classList.remove('active')
+					clearLast(lastSlide)
 				}
 
 				
@@ -217,9 +276,52 @@
 
 
 				// event.currentSlide, event.indexh, event.indexv
-			});
-
+				function clearLast(node) {
+					if(!node) {
+						return
+					}
+					node.querySelector('.animate-el').classList.remove('active')
+					// console.log(node)
+					}
+				});
 			
+				// typing effects
+				window.onload = function() {
+					function type(t, node, fs, ss, mode) {
+					var id;
+					var i = 0;
+					var speed = ss;
+					startSet(t, node, fs, ss, mode);
+					
+					function startSet (t, node, fs, ss, mode) {
+						var wordArray = t.split('');
+						id = setInterval(()=> {
+							let a = wordArray.slice(0,i)
+							node.innerText = a.join('')
+							if(mode==='appear') {
+								if(i===t.length) {
+									mode = 'disappear';
+									clearInterval(id)
+									speed = fs;
+									startSet(t, node, fs, ss, mode);
+								}
+								i++
+							}else if(mode === 'disappear'){
+								i--
+								if(i===0) {
+									node.textContent = ' '
+									mode = 'appear';
+									clearInterval(id)
+									speed = ss;
+									startSet(t, node, fs, ss, mode);
+								}   
+
+							}
+						}, speed)
+					}
+				}
+					type('stackneverflow - mstu4040', document.querySelector('.title-anime'), 50, 300, 'appear');
+				}
 
 		</script>
 	</body>
